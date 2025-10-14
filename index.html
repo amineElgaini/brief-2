@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .hero {
+      position: relative;
+      /* min-height: 100vh; */
+      color: white;
+    }
+
+    .hero::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(./img/bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      bottom: 0;
+      right: 0;
+    }
+    .hero::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(./img/bg2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      bottom: 0;
+      right: 0;
+    }
+
+    .hero .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* min-height: 100vh; */
+    }
+
+    .hero button {
+      padding: 5px 10px;
+      border: 2px solid white;
+      background: none;
+      color: white;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .hero nav {
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+    }
+    .hero nav ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 15px;
+    }
+
+    .content img,
+    .content > div {
+      max-width: 50%;
+    }
+
+    .hero .content img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .hero .content {
+      flex: 1;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .hero .content h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .hero .content p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  </style>
+
+  <body>
+    <div class="hero">
+      <div class="container">
+        <nav>
+          <span>Logo</span>
+          <ul>
+            <li>Home</li>
+            <li>Events</li>
+            <li>Blog</li>
+            <button>Login</button>
+            <button>Sign Up</button>
+          </ul>
+        </nav>
+
+        <div class="content">
+          <img src="./img/kpop.png" alt="" />
+
+          <div>
+            <h2>SBS MTV The Kpop Show Ticket Package</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+              deleniti nesciunt ducimus ut autem corrupti, accusamus laboriosam,
+              tenetur adipisci odio, voluptatem accusantium ad nobis rem nihil
+              ab temporibus iusto inventore?
+            </p>
+            <div class="hero-buttons">
+              <button class="event">Events</button>
+              <button class="blog">Blog</button>
+            </div>
+          </div>
+        </div>
+
+        <style>
+          .search {
+            background: #242565;
+            display: flex;
+            padding: 20px;
+            border-radius: 25px;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            transform: translateY(50%);
+          }
+          .search input,
+          .search select {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            color: white;
+            outline: none;
+            padding: 5px;
+          }
+          .search option {
+            color: black;
+          }
+          .search label {
+            display: block;
+            /* margin-bottom: 5px; */
+          }
+        </style>
+
+        <div class="search">
+          <div>
+            <label for="">Search Event</label>
+            <input type="text" value="Konser Jazz" />
+          </div>
+          <div>
+            <label for="">Place</label>
+            <input type="text" value="Indonesia" />
+          </div>
+          <div>
+            <label for="">Time</label>
+            <select>
+              <option value="" disabled selected>Select an option</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .event {
+        padding: 80px 0 40px;
+      }
+
+      .event h2 {
+        font-size: 30px;
+      }
+      .event .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      select {
+        background: #f2f4ff;
+        border: 2px solid #1d275f;
+        border-radius: 25px;
+        padding: 10px 8px;
+        text-align: center;
+      }
+    </style>
+
+    <section class="event container">
+      <div class="head">
+        <h2>Upcoming Events</h2>
+        <div>
+          <select>
+            <option value="" disabled selected>weekdays</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+
+          <select>
+            <option value="" disabled selected>event type</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+
+          <select>
+            <option value="" disabled selected>any category</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <img src="./img/Rectangle 12-1.png" alt="" />
+      </div>
+    </section>
+  </body>
+</html>
