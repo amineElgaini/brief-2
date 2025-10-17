@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-color: #eee;
+}
 ul {
   list-style: none;
 }
@@ -36,3 +39,8 @@ ul {
   }
 }
 /* End Global Rules */
+
+a {
+  color: white;
+  text-decoration: none;
+}
